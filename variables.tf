@@ -30,11 +30,6 @@ variable "instance_ami" {
   default     = "ami-921423eb"
 }
 
-variable "instance_key" {
-  description = "Name of an EC2 key-pair for SSH access."
-  default     = "[]"
-}
-
 variable "pre-defined-spotrequest" {
   description = "Which pre defined spot request list to use: small, small-IPv6, medium, medium-IPv6"
   default     = "small"

@@ -20,7 +20,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -36,7 +35,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -52,7 +50,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -68,7 +65,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -84,7 +80,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -100,7 +95,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -116,7 +110,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -132,7 +125,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -148,7 +140,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -164,7 +155,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -180,7 +170,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -196,7 +185,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -212,7 +200,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -228,7 +215,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -244,7 +230,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -260,7 +245,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -276,7 +260,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -292,7 +275,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -308,7 +290,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -324,7 +305,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -340,7 +320,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -356,7 +335,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -372,7 +350,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -388,7 +365,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -404,7 +380,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -420,7 +395,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -436,7 +410,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -452,7 +425,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -468,7 +440,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -484,7 +455,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -500,7 +470,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -516,7 +485,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -532,7 +500,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -548,7 +515,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -564,7 +530,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -580,7 +545,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -596,7 +560,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -612,7 +575,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -628,7 +590,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -644,7 +605,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -660,7 +620,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -676,7 +635,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -692,7 +650,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -708,7 +665,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -724,7 +680,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -740,7 +695,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -756,7 +710,6 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 
   launch_specification {
@@ -772,6 +725,5 @@ resource "aws_spot_fleet_request" "large" {
     tags                 = "${local.spot_fleet_tags}"
     iam_instance_profile = "${aws_iam_instance_profile.ec2.name}"
     user_data            = "${var.user_data}"
-    key_name             = "${var.instance_key}"
   }
 }
