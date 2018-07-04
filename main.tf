@@ -5,7 +5,7 @@
 data "aws_region" "current" {}
 
 locals {
-  spot_fleet_tags = "${map("Name", "${var.name_prefix}-spot-instance")}"
+  spot_fleet_tags = "${merge(var.tags,map("Name", "${var.name_prefix}-spot-instance"))}"
 }
 
 resource "aws_iam_role" "spotfleet" {

@@ -1,17 +1,21 @@
 # ------------------------------------------------------------------------------
 # Variables
 # ------------------------------------------------------------------------------
+variable "instance_ami" {
+  description = "The EC2 image ID to launch."
+}
+
 variable "name_prefix" {
   description = "A prefix used for naming resources."
 }
 
 variable "subnet_ids" {
+  description = "ID of subnets where instances can be provisioned."
   type        = "list"
-  description = "List of subnets to launch the spotfleet in"
 }
 
 variable "vpc_id" {
-  description = "ID of the VPC to be launched into"
+  description = "The VPC ID."
 }
 
 variable "tags" {
@@ -21,29 +25,18 @@ variable "tags" {
 }
 
 variable "allocation_strategy" {
-  description = "Optional: Defaulted to lowestPrice - recommend setting diversified for production."
+  description = "Allocation stragegy either lowestPrice or diversified"
   default     = "lowestPrice"
 }
 
-variable "instance_ami" {
-  description = "ami to use for cluster instances - default is Amazon ESC-optimized AMI in eu-west-1"
-  default     = "ami-921423eb"
-}
-
-variable "pre-defined-spotrequest" {
-  description = "Which pre defined spot request list to use: small, small-IPv6, medium, medium-IPv6"
+variable "pre_defined_spotrequest" {
+  description = "Which pre defined spot request list to use: small, small-ipv6, medium, medium-ipv6, large, large-ipv6"
   default     = "small"
 }
 
 variable "spot_price" {
   description = "The maximum price per unit (vCPU) - default is set to roughly on demand price"
   default     = "0.05"
-}
-
-# Hack to overcome that count variables cannot be inferred
-variable "subnet_count" {
-  description = "For future use: count of subnets - current predefined spot requests are for 3 subnets"
-  default     = 3
 }
 
 variable "target_capacity" {

@@ -4,7 +4,7 @@ if [ "$#" -ne 4 ]; then
     exit 1
 fi
 echo 'resource "aws_spot_fleet_request" "'${4}'" {' >${2}
-echo 'count = "${var.pre-defined-spotrequest=="'${4}'" ? 1 : 0}"'>>${2}
+echo 'count = "${var.pre_defined_spotrequest=="'${4}'" ? 1 : 0}"'>>${2}
 cat spotfleet-head.template >> ${2}
 
 while IFS=, read type weighting;

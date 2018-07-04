@@ -11,11 +11,12 @@ data "aws_subnet_ids" "main" {
 }
 
 module "spotfleet" {
-  source      = "../../../terraform-aws-spotfleet"
-  name_prefix = "your-project"
-  user_data   = "#!bin/bash\necho hello world"
-  vpc_id      = "${data.aws_vpc.main.id}"
-  subnet_ids  = "${data.aws_subnet_ids.main.ids}"
+  source       = "../../"
+  name_prefix  = "your-project"
+  instance_ami = "ami-921423eb"
+  user_data    = "#!bin/bash\necho hello world"
+  vpc_id       = "${data.aws_vpc.main.id}"
+  subnet_ids   = "${data.aws_subnet_ids.main.ids}"
 }
 
 resource "aws_security_group_rule" "ingress" {

@@ -1,5 +1,5 @@
 resource "aws_spot_fleet_request" "small" {
-  count               = "${var.pre-defined-spotrequest=="small" ? 1 : 0}"
+  count               = "${var.pre_defined_spotrequest=="small" ? 1 : 0}"
   depends_on          = ["aws_iam_policy_attachment.spotfleet"]
   iam_fleet_role      = "${aws_iam_role.spotfleet.arn}"
   spot_price          = "${var.spot_price}"
