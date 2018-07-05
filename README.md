@@ -34,7 +34,3 @@ Note: By default spot fleets created by this module will become inactive on 2028
 
 ##### 3 Subnets
 The pre-defined spot request compositions are hard coded to use 3 subnets
-
-
-- [example.tf](examples/default/example.tf).
-- [CODEOWNERS](CODEOWNERS).
