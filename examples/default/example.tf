@@ -48,3 +48,7 @@ output "security_group_id" {
 output "role_arn" {
   value = "${module.spotfleet.role_arn}"
 }
+
+output "request_id" {
+  value = "${module.spotfleet.request_id}"
+}
