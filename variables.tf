@@ -11,7 +11,7 @@ variable "name_prefix" {
 
 variable "subnet_ids" {
   description = "ID of subnets where instances can be provisioned."
-  type        = "list"
+  type        = list(string)
 }
 
 variable "vpc_id" {
@@ -20,7 +20,7 @@ variable "vpc_id" {
 
 variable "tags" {
   description = "A map of tags (key-value pairs) passed to resources."
-  type        = "map"
+  type        = map(string)
   default     = {}
 }
 

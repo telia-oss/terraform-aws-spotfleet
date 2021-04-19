@@ -5,18 +5,19 @@
 data "aws_region" "current" {}
 
 locals {
-  spot_fleet_tags = "${merge(var.tags,map("Name", "${var.name_prefix}-spot-instance"))}"
+  spot_fleet_tags = merge(var.tags, map("Name", "${var.name_prefix}-spot-instance"))
 }
 
 resource "aws_iam_role" "spotfleet" {
   name               = "${var.name_prefix}-spotfleet"
-  assume_role_policy = "${data.aws_iam_policy_document.spotfleet-assume.json}"
+  assume_role_policy = data.aws_iam_policy_document.spotfleet-assume.json
 }
 
 resource "aws_iam_policy_attachment" "spotfleet" {
-  name       = "${var.name_prefix}-spotfleet"
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetRole"
-  roles      = ["${aws_iam_role.spotfleet.name}"]
+  name = "${var.name_prefix}-spotfleet"
+  ## This is the original line //policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetRole"
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2SpotFleetTaggingRole"
+  roles      = [aws_iam_role.spotfleet.name]
 }
 
 data "aws_iam_policy_document" "spotfleet-assume" {
@@ -34,7 +35,7 @@ data "aws_iam_policy_document" "spotfleet-assume" {
 
 resource "aws_iam_role" "ec2-instance" {
   name               = "${var.name_prefix}-ec2-instances"
-  assume_role_policy = "${data.aws_iam_policy_document.ec2-instance-assume.json}"
+  assume_role_policy = data.aws_iam_policy_document.ec2-instance-assume.json
 }
 
 data "aws_iam_policy_document" "ec2-instance-assume" {
@@ -53,13 +54,13 @@ data "aws_iam_policy_document" "ec2-instance-assume" {
 resource "aws_security_group" "main" {
   name        = "${var.name_prefix}-sg"
   description = "Terraformed security group."
-  vpc_id      = "${var.vpc_id}"
+  vpc_id      = var.vpc_id
 
-  tags = "${merge(var.tags, map("Name", "${var.name_prefix}-sg"))}"
+  tags = merge(var.tags, map("Name", "${var.name_prefix}-sg"))
 }
 
 resource "aws_security_group_rule" "egress" {
-  security_group_id = "${aws_security_group.main.id}"
+  security_group_id = aws_security_group.main.id
   type              = "egress"
   protocol          = "-1"
   from_port         = 0
@@ -70,5 +71,5 @@ resource "aws_security_group_rule" "egress" {
 
 resource "aws_iam_instance_profile" "ec2" {
   name = "${var.name_prefix}-ec2-instance"
-  role = "${aws_iam_role.ec2-instance.name}"
+  role = aws_iam_role.ec2-instance.name
 }
